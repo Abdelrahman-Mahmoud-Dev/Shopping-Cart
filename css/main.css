@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Lato', sans-serif;
+
+}
+body{
+        background-image: linear-gradient(#1c98be,rgb(25, 240, 150));
+    background-repeat: no-repeat;
+  
+}
+.container{
+    margin: 0 auto;
+    padding: 0px 20px; 
+    width: 90%;
+}
+
+header{
+   padding: 5px 0;
+    background-color: #9e9e9e;
+
+
+}
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.logo{
+    text-decoration: none;
+    font-size: 32px;
+    color: #000;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+ul li a:link,
+ul li a:visited{
+    display: block;
+    color: #000;
+    margin-left: 15px;
+    min-width: 50px;   
+    text-decoration: none;
+    padding: 5px;
+        font-size: 18px;
+}
+#links li{
+    position: relative;
+}
+
+
+/* * Form Style */
+.section-form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+     background-color: #3f51b5;
+     text-align: center;
+     width: 50%;
+     padding: 30px;
+}
+
+.section-form h2{
+    font-size: 50px;
+    letter-spacing: 2px;
+    color: #e8e11c;
+
+}
+.section-form form{
+
+}
+.section-form form input{
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin: 10px 0;
+    padding: 5px;
+    border: 1px solid #ddd;
+     font-family: 'Lato', sans-serif;
+}
+ .section-form form input[type="submit"]{
+     font-size: 25px;
+     text-transform: uppercase;
+     height: auto;
+     cursor: pointer;
+ }
+  .section-form form input[type="submit"]:hover{
+    opacity: .7;
+  }
+  nav ul#user-container{
+      display: none;
+      text-align: center;
+  }
+  nav ul#user-container li {
+      position: relative;
+      font-size: 20px;
+      cursor: pointer;
+      margin-left: 10px;
+  }
+
+.products{
+    width: 60%;
+    margin: 10px 0;
+}
+
+.product-item{
+    width: 100%;
+   display: flex;
+   background-color: #ccc;
+   justify-content: space-between;
+   /* align-items: center; */
+       margin-bottom: 20px;
+      
+       min-height: 150px;
+   
+}
+.product-item-img{
+    width: 25%;
+ 
+    margin-right: 10px;
+}
+.product-info a,
+.product-info a:visited
+.product-info a:link{
+    display: block;
+    text-decoration: none;
+    color: #000;
+    font-size: 33px;
+       cursor: pointer;
+}
+.product-actions{
+      flex: 1;
+ 
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+      
+   
+}
+.add-to-cart{
+    display: block;
+    font-family: inherit;
+    margin-left: auto;
+    background-color: #009688;
+    border: 0;
+    cursor: pointer;
+    padding: 10px 15px;
+    font-size: 15px;
+    color: #000;
+}
+.heart{
+    cursor: pointer;
+    display: block;
+    
+    margin-left: auto;
+
+    width: 20px;
+}
+
+.badge{
+    position: absolute;
+    background-color: #f03;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    line-height: 20px;
+    font-size: 13px;
+    text-align: center;
+    top: -14px;
+    left: 10px;
+    display: none;
+}
+
+.products-on-cart{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 200px;
+    transform: translate(-60%);
+    background-color: beige;
+    padding: 20px;
+   cursor: auto;
+   text-align: center;
+   display: none;
+
+}
+.products-on-cart a:link,
+.products-on-cart a:visited{
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 0;
+    margin-top: 10px;
+     background-color: #009688;
+}
+
+.empty{
+    display: none;
+}
+
+
+
+
+
+
+
+
+.products-item img{
+    width: 100%;
+    height: 400px;
+   display: block;
+    object-fit: cover;
+    padding: 2px;
+    border: 1px solid #000;
+    margin-bottom: 20px;
+}
+
+
+#search-input{
+        display: block;
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px 5px;
+    border: none;
+    border-radius: 4px;
+}
+#search-input:focus{
+    outline: none;
+    box-shadow: 5px 5px 6px -3px rgba(43, 8, 100, 0.2)
+}
