@@ -1,18 +1,11 @@
-  let products = JSON.parse(localStorage.getItem('products'));
+let products = JSON.parse(localStorage.getItem('products'));
+let itemId = localStorage.getItem('itemId');
+let itemDetails = products.find((product) => product.id == itemId);
 
-   let itemId = localStorage.getItem('itemId');
-    console.log(itemId)
-   let itemDetail = products.find((product) => product.id == itemId)
-console.log(itemDetail)
+let drawProductDetails = document.querySelector('.products-item');
 
-
-
-
-let drawProduct = document.querySelector('.products-item')
-
-drawProduct.innerHTML = `
-
- <img src="${itemDetail.imageUrl}" alt="">
-                <h2>${itemDetail.title}</h2>
-                <span>${itemDetail.size} </span>
-`
+drawProductDetails.innerHTML = `
+              <img src="${itemDetails.imageUrl}" alt="">
+                <h2>${itemDetails.title}</h2>
+                <span>${itemDetails.size} </span>
+`;
